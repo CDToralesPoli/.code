@@ -1,0 +1,126 @@
+/* Ajustes Globales */
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #303030;
+  margin: 0;
+}
+main {
+  text-align: justify;
+  margin: 2rem;
+}
+.banner {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+/* Personalizacion del Header */
+.header {
+  background-color: #5e17eb;
+  display: flexbox;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  border-radius: 0 0 1rem 1rem;
+}
+.logoHeader {
+  display: inline-flexbox;
+  float: left;
+  margin: -0.5rem 0 0 3rem;
+}
+.logo {
+  height: 4rem;
+}
+.menuPrincipal ul {
+  list-style-type: none;
+  padding-bottom: 1rem;
+  margin-right: 3rem;
+}
+.menuPrincipal li {
+  float: right;
+}
+.menuPrincipal a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+/*.menuPrincipal a:hover {
+  color: #ff6c55;
+  cursor: pointer;
+}*/
+
+/* Footer */
+.footer {
+  background-color: #5e17eb;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  bottom: 0%;
+  left: 0%;
+  position: absolute;
+  bottom: auto;
+  color: #ffffff;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.logoFooter {
+  text-align: center;
+  float: left;
+  margin-left: 1rem;
+}
+#logoFooter {
+  margin-bottom: -2rem;
+}
+#copyright {
+  margin-bottom: 0rem;
+}
+.redesFooter ul {
+  list-style-type: none;
+  padding-top: 0.5rem;
+  margin-right: 3rem;
+}
+.redesFooter li {
+  float: right;
+}
+.redesFooter a {
+  margin: 1rem;
+}
+.iconoFooter {
+  filter: invert(100%);
+}
+/* Página Contacto */
+.redesContacto,
+.escribenos {
+  width: 50%;
+}
+.redesContacto div {
+  float: left;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.redesContacto h5 {
+  margin-top: 0.5rem;
+  margin-bottom: -1rem;
+}
+.escribenos {
+  float: right;
+  margin-top: -4rem;
+}
+.escribenos div {
+  float: right;
+  font-weight: bold;
+  text-align: end;
+  margin-right: 2rem;
+}
+.ubicacion {
+  margin-top: 8rem;
+  width: 100%;
+}
+.ubicacion h5 {
+  margin-top: -1rem;
+}
