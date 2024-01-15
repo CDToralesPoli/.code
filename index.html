@@ -1,107 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FunCode • Inicio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Cabecera -->
-    <header class="header">
-      <!-- Logo -->
-      <div class="logoHeader">
-        <img class="logo"
-          src="media/images/logo_funcode_white.svg"
-          
-          alt="Logo FunCode"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- enlace al css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- enlace a los iconos-->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- enlace a Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- titulo de la página -->
+  <title>.Code</title>
+</head>
+
+<body>
+  <!-- cabecera -->
+  <header class="header">
+    <!-- barra de navegacion -->
+    <div class="navbar">
+      <!-- logo en formato texto -->
+      <div class="logo">
+        <a href="./index.html">.<span style="color: #5e17eb">Code</span></a>
       </div>
-      <!-- Menú Principal -->
-      <nav class="menuPrincipal">
-        <ul>
-          <li><a href="./sections/contacto.html">Contacto</a></li>
-          <li><a href="./sections/portfolio.html">Portfolio</a></li>
-          <li><a href="./sections/servicios.html">Servicios</a></li>
-          <li><a href="./sections/nosotros.html">Nosotros</a></li>
-          <li><a href="index.html">Inicio</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Cuerpo de la página-->
-    <main class="mainInicio">
-      <img
-        src="media/images/banner-inicio.webp"
-        class="banner"
-        alt="Banner inicio FunCode"
-      />
-      <h1>¿Necesitas crear un producto digital?</h1>
-      <p>
-        En <b>FunCode</b> contamos con una amplia gama de servicios de diseño y
-        desarrollo web, desde el diseño personalizado de sitios hasta el
-        desarrollo de tiendas en línea. Nuestros diseños web están pensados para
-        ayudar a nuestros clientes a vender sus productos y servicios,
-        ofreciendo una imagen profesional del negocio con un sitio web de alto
-        impacto.
-      </p>
-      <h3>
-        Con nuestro equipo de expertos
-        <b>transformaremos tus ideas en realidad.</b>
-      </h3>
-    </main>
-    <!-- Pie de página -->
-    <footer class="footer">
-      <!-- Logo -->
-      <seccion class="logoFooter">
-        <img
-          id="logoFooter"
-          src="media/images/logo_funcode_white.svg"
-          style="height: 4rem"
-          alt="Logo FunCode"
-        />
-        <h6 id="copyright">Copyright 2023 FunCode</h6>
-      </seccion>
-      <!-- Redes -->
-      <section class="redesFooter">
-        <ul>
-          <li>
-            <a href="https:www.linkedin.com" target="_blank"
-              ><img
-                src="media/images/logo_linkedin.png"
-                class="iconoFooter"
-                style="height: 2rem"
-                alt="Logo Linkedin"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com" target="_blank"
-              ><img
-                src="media/images/logo_instagram.png"
-                class="iconoFooter"
-                style="height: 2rem"
-                alt="Logo Instagram"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://api.whatsapp.com/send?phone=5493764996553"
-              target="_blank"
-              ><img
-                src="media/images/logo_whatsapp.png"
-                class="iconoFooter"
-                style="height: 2rem"
-                alt="Logo Whatsapp"
-            /></a>
-          </li>
-        </ul>
-      </section>
-    </footer>
-  </body>
+      <!-- evento lanzador e icono del menu en vista mobile -->
+      <input type="checkbox" id="click" />
+      <label for="click" class="mainicon">
+        <!-- icono menu -->
+        <div class="menu">
+          <i class="bx bx-menu"></i>
+        </div>
+      </label>
+      <!-- menu -->
+      <ul>
+        <li><a href="./index.html" class="active">Inicio</a></li>
+        <li><a href="./html/servicios.html">Servicios</a></li>
+        <li><a href="./html/portfolio.html">Portfolio</a></li>
+        <li><a href="./html/nosotros.html">Nosotros</a></li>
+        <li><a href="./html/contacto.html">Contacto</a></li>
+      </ul>
+      <!-- evento lanzador e icono del modo oscuro -->
+      <label class="mode">
+        <input type="checkbox" id="darkModeToggle" />
+        <!-- icono modo oscuro -->
+        <i class="bx bxs-bulb"></i>
+      </label>
+    </div>
+  </header>
+
+  <!-- seccion principal -->
+  <main>
+    <!-- contenedor grid de la seccion principal -->
+    <section class="main">
+      <!-- contenedor de imagenes -->
+      <div class="images">
+        <img src="./assets/media/equipo-desarrollando.jpg" alt="" class="img" />
+        <span class="bg-effect-1">
+          <span class="bg-effect-1"></span>
+        </span>
+      </div>
+      <div class="detail">
+        <h3>Somos</h3>
+        <h1>.<span style="color: #5e17eb">Code</span></h1>
+        <p>
+          Contamos con una amplia gama de servicios de diseño y desarrollo web, desde el diseño personalizado
+          de sitios hasta el desarrollo de tiendas en línea.
+          <br>Nuestros diseños web están pensados para ayudar a nuestros clientes a vender sus productos y
+          servicios, ofreciendo una imagen profesional del negocio con un sitio web de alto impacto.
+          <br>Con nuestro equipo de expertos transformaremos tus ideas en realidad.
+        </p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- pie de pagina -->
+  <footer>
+    <!-- contenedor grid -->
+    <div class="footer">
+      <!-- logo y aviso de copyright del sitio -->
+      <div class="logoFooter">
+        <a href="./index.html">.<span style="color: #5e17eb">Code</span></a>
+      </div>
+      <div class="copyright">
+        <p><small>&copy; .Code All Rights Reserved.</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- script modo oscuro -->
+  <script>
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+    const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+    if (isDarkMode) {
+      body.classList.add("dark-mode");
+      darkModeToggle.checked = true;
+    }
+    darkModeToggle.addEventListener("change", () => {
+      if (darkModeToggle.checked) {
+        body.classList.add("dark-mode");
+        localStorage.setItem("darkMode", "enabled");
+      } else {
+        body.classList.remove("dark-mode");
+        localStorage.setItem("darkMode", "disabled");
+      }
+    });
+  </script>
+</body>
+
 </html>
