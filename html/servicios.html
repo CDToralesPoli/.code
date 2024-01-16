@@ -1,68 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunCode • Servicios</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styleold.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- enlace al css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- enlace a los iconos-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- enlace a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <!-- titulo de la página -->
+    <title>Servicios</title>
 </head>
+
 <body>
-    <!-- Cabecera -->
+    <!-- cabecera -->
     <header class="header">
-        <!-- Logo -->
-        <div class="logoHeader">
-            <img src="../media/images/logo_funcode_white.svg" style="height: 4rem" alt="Logo FunCode">
-        </div>
-        <!-- Menú Principal -->
-        <nav class="menuPrincipal">
+        <!-- barra de navegacion -->
+        <div class="navbar">
+            <!-- logo en formato texto -->
+            <div class="logo">
+                <a href="../index.html">.<span style="color: #5e17eb">Code</span></a>
+            </div>
+            <!-- evento lanzador e icono del menu en vista mobile -->
+            <input type="checkbox" id="click" />
+            <label for="click" class="mainicon">
+                <!-- icono menu -->
+                <div class="menu">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </label>
+            <!-- menu -->
             <ul>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./servicios.html" class="active">Servicios</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+            <!-- evento lanzador e icono del modo oscuro -->
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle" />
+                <!-- icono modo oscuro -->
+                <i class="bx bxs-bulb"></i>
+            </label>
+        </div>
     </header>
+
     <!-- Cuerpo de la pagina-->
-    <main class="mainServicios">
-        <H1>¿Que servicios ofrecemos?</H1>
-        <br>
-        <h2>Diseño de E-commerce</h2>
-        <img src="../media/images/banner-ecommerce.webp" class="banner" alt="Banner ecommerce">
-        <p>Contar con un e-commerce le brindará muchos beneficios a tu negocio, como una mayor visibilidad de productos y servicios, una reducción de costos, mayor alcance, una mayor visibilidad de marca, facilidades de entrega, ventas 24/7 y una comunicación directa con el cliente.</p>
-        <p>Nuestro equipo de desarrolladores cuenta con una amplia variedad de impresionantes plantillas que te ayudarán a decidir al instante el diseño de tu tienda. Pudiendo tenerla en funcionamiento en tiempo récord.</p>
-        <br>
-        <h2>Páginas Web Profesionales</h2>
-        <img src="../media/images/banner-web-profesional.webp" class="banner" alt="Banner web profesional">
-        <p>Una página web moderna y elegante le dará a tu estudio o empresa la credibilidad que necesita, atrayendo nuevos clientes y fidelizando los ya existentes.</p>
-        <p>Tú página podrá contar con acceso a clientes y empleados. Suscripción a alertas, ademas de opciones de consultas por whatsapp, mail y chatbots.</p>
-        <br>
-        <h2>Desarrollo y Diseño 100% Personalizado</h2>        
-        <img src="../media/images/banner-programacion.webp" class="banner" alt="Banner desarrollo personalizado">
-        <p>En FunCode nos especializamos en crear soluciones digitales personalizadas para nuestros clientes y estamos orgullosos de ofrecer un servicio profesional y confiable que se adapta a las necesidades de cada cliente.</p>
-        <p>Si estás buscando una solución personalizada para tu negocio, no dudes en ponerte en contacto con nosotros.</p>
-        <br>
+    <main>
+        <section class="mainServicios">
+            <H3>¿Que servicios ofrecemos?</H3>
+            <div class="cards">
+            <div class="card">
+                <div class="cardtitle">Diseño de E-commerce</div>
+                <div class="cardbody">
+                    <img src="../assets/media/banner-ecommerce.webp" class="imgServicios" alt="Banner ecommerce">
+                    <p>Contar con un e-commerce le brindará muchos beneficios a tu negocio, como una mayor visibilidad
+                        de productos y servicios, una reducción de costos, mayor alcance, una mayor visibilidad de
+                        marca, facilidades de entrega, ventas 24/7 y una comunicación directa con el cliente.</p>
+                </div>
+                <div class="more">
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardtitle">Páginas Web Profesionales</div>
+                <div class="cardbody">
+                    <img src="../assets/media/banner-web-profesional.webp" class="imgServicios" alt="Banner web profesional">
+                    <p>Una página web moderna y elegante le dará a tu estudio o empresa la credibilidad que necesita,
+                        atrayendo nuevos clientes y fidelizando los ya existentes.</p>
+                    <p>Tú página podrá contar con acceso a clientes y empleados. Suscripción a alertas, ademas de
+                        opciones de consultas por whatsapp, mail y chatbots.</p>
+                </div>
+                <div class="more">
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardtitle">Desarrollo 100% Personalizado</div>
+                <div class="cardbody">
+                    <img src="../assets/media/banner-programacion.webp" class="imgServicios"
+                        alt="Banner desarrollo personalizado">
+                    <p>En FunCode nos especializamos en crear soluciones digitales personalizadas para nuestros clientes
+                        y estamos orgullosos de ofrecer un servicio profesional y confiable que se adapta a las
+                        necesidades de cada cliente.</p>
+                    <p>Si estás buscando una solución personalizada para tu negocio, no dudes en ponerte en contacto con
+                        nosotros.</p>
+                </div>
+                <div class="more">
+                    <a href="#">Más información</a>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
-    <!-- Pie de página -->
-    <footer class="footer">
-        <!-- Logo -->
-        <seccion class="logoFooter">
-            <img id="logoFooter" src="../media/images/logo_funcode_white.svg" style="height: 4rem" alt="Logo FunCode">
-            <h6 id="copyright">Copyright 2023 FunCode</h6>
-        </seccion>
-        <!-- Redes -->
-        <section class="redesFooter">
-            <ul>
-                <li><a href="https:www.linkedin.com" target="_blank"><img src="../media/images/logo_linkedin.png" class="iconoFooter" style="height: 2rem" alt="logo linkedin"></a></li> 
-                <li><a href="https://www.instagram.com" target="_blank"><img src="../media/images/logo_instagram.png" class="iconoFooter" style="height: 2rem" alt="logo instagram"></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5493764996553" target="_blank"><img src="../media/images/logo_whatsapp.png" class="iconoFooter" style="height: 2rem" alt="logo whatsapp"></a></li>
-            </ul>
-       </section>
+
+    <!-- pie de pagina -->
+    <footer>
+        <!-- contenedor grid -->
+        <div class="footer">
+            <!-- logo y aviso de copyright del sitio -->
+            <div class="logoFooter">
+                <a href="../index.html">.<span style="color: #5e17eb">Code</span></a>
+            </div>
+            <div class="copyright">
+                <p><small>&copy; .Code All Rights Reserved.</small></p>
+            </div>
+        </div>
     </footer>
+
+    <!-- script modo oscuro -->
+    <script>
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const body = document.body;
+        const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+        if (isDarkMode) {
+            body.classList.add("dark-mode");
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener("change", () => {
+            if (darkModeToggle.checked) {
+                body.classList.add("dark-mode");
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                body.classList.remove("dark-mode");
+                localStorage.setItem("darkMode", "disabled");
+            }
+        });
+    </script>
 </body>
+
 </html>
