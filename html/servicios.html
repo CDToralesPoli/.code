@@ -5,14 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- enlace al css -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <!-- enlace a boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- enlace a los iconos-->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <!-- enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <!-- enlace al css -->
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- titulo de la página -->
     <title>Servicios</title>
 </head>
@@ -56,52 +59,42 @@
         <section class="mainServicios">
             <H3>¿Que servicios ofrecemos?</H3>
             <div class="cards">
-            <div class="card">
-                <div class="cardtitle">Diseño de E-commerce</div>
-                <div class="cardbody">
-                    <img src="../assets/media/banner-ecommerce.webp" class="imgServicios" alt="Banner ecommerce">
-                    <p>Contar con un e-commerce le brindará muchos beneficios a tu negocio, como una mayor visibilidad
-                        de productos y servicios, una reducción de costos, mayor alcance, una mayor visibilidad de
-                        marca, facilidades de entrega, ventas 24/7 y una comunicación directa con el cliente.</p>
+                <div class="card">
+                    <div class="cardtitle">Diseño de E-commerce</div>
+                    <div class="cardbody">
+                        <img src="../assets/media/banner-ecommerce.webp" class="imgServicios" alt="Banner ecommerce">
+                        <p>Contar con un e-commerce le brindará muchos beneficios a tu negocio, como una mayor visibilidad de productos y servicios, una reducción de costos, mayor alcance, una mayor visibilidad de marca, facilidades de entrega, ventas 24/7 y una comunicación directa con el cliente.</p>
+                    </div>
+                    <div class="more">
+                        <a href="#">Más información</a>
+                    </div>
                 </div>
-                <div class="more">
-                    <a href="#">Más información</a>
+                <div class="card">
+                    <div class="cardtitle">Páginas Web Profesionales</div>
+                    <div class="cardbody">
+                        <img src="../assets/media/banner-web-profesional.webp" class="imgServicios" alt="Banner web profesional">
+                        <p>Una página web moderna y elegante le dará a tu estudio o empresa la credibilidad que necesita, atrayendo nuevos clientes y fidelizando los ya existentes. <br>Tú página podrá contar con acceso a clientes y empleados. Suscripción a alertas, ademas de opciones de consultas por whatsapp, mail y chatbots.</p>
+                    </div>
+                    <div class="more">
+                        <a href="#">Más información</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="cardtitle">Páginas Web Profesionales</div>
-                <div class="cardbody">
-                    <img src="../assets/media/banner-web-profesional.webp" class="imgServicios" alt="Banner web profesional">
-                    <p>Una página web moderna y elegante le dará a tu estudio o empresa la credibilidad que necesita,
-                        atrayendo nuevos clientes y fidelizando los ya existentes.</p>
-                    <p>Tú página podrá contar con acceso a clientes y empleados. Suscripción a alertas, ademas de
-                        opciones de consultas por whatsapp, mail y chatbots.</p>
+                <div class="card">
+                    <div class="cardtitle">Desarrollo 100% Personalizado</div>
+                    <div class="cardbody">
+                        <img src="../assets/media/banner-programacion.webp" class="imgServicios" alt="Banner desarrollo personalizado">
+                        <p>En FunCode nos especializamos en crear soluciones digitales personalizadas para nuestros clientes y estamos orgullosos de ofrecer un servicio profesional y confiable que se adapta a las necesidades de cada cliente. <br>Si estás buscando una solución personalizada para tu negocio, no dudes en ponerte en contacto con nosotros.</p>
+                    </div>
+                    <div class="more">
+                        <a href="#">Más información</a>
+                    </div>
                 </div>
-                <div class="more">
-                    <a href="#">Más información</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="cardtitle">Desarrollo 100% Personalizado</div>
-                <div class="cardbody">
-                    <img src="../assets/media/banner-programacion.webp" class="imgServicios"
-                        alt="Banner desarrollo personalizado">
-                    <p>En FunCode nos especializamos en crear soluciones digitales personalizadas para nuestros clientes
-                        y estamos orgullosos de ofrecer un servicio profesional y confiable que se adapta a las
-                        necesidades de cada cliente.</p>
-                    <p>Si estás buscando una solución personalizada para tu negocio, no dudes en ponerte en contacto con
-                        nosotros.</p>
-                </div>
-                <div class="more">
-                    <a href="#">Más información</a>
-                </div>
-            </div>
             </div>
         </section>
     </main>
 
-    <!-- pie de pagina -->
-    <footer>
+    <!-- pie de pagina con boostrap-->
+    <footer class="footer mt-auto py-3 bg-body-tertiary" id="footer">
         <!-- contenedor grid -->
         <div class="footer">
             <!-- logo y aviso de copyright del sitio -->
@@ -133,6 +126,8 @@
             }
         });
     </script>
+    <!-- scrip boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -7,20 +7,19 @@
 }
 
 html {
-  --primary-dark: #1f252e;
   --primary-color: #5e17eb;
+  --primary-dark: #1f252e;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
-  height: 100vh;
+  min-height: 100vh;
   color: #000000;
 }
 
 main {
   padding: 0 8.4rem;
-  min-height: 100vh;
   position: relative;
 }
 
@@ -69,6 +68,8 @@ ul {
   list-style-type: none;
   background-color: transparent;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 li a {
@@ -124,22 +125,26 @@ li a:hover {
 }
 
 .images {
-  border-radius: 10px;
+  border-radius: .5rem;
   width: 450px;
+  /*box-shadow: 2px 2px 8px 4px rgba(212, 212, 212, 0.30);*/
 }
 
 .images {
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 10px 10px 20px #d1d9e6, 10px 10px 20px #ffffff;
-  border-top: 2px solid var(--primary-color);
+  background-color: transparent;
+  box-shadow: 10px 10px 20px rgb(209, 217, 230), 10px 10px 20px rgb(255, 255, 255);
+  border-top: 3px solid var(--primary-color);
   margin: auto;
   overflow: hidden;
+  height: fit-content;
 }
 
 .imgInicio {
   width: 100%;
   height: auto;
+  border-radius: .5rem;
 }
+
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -166,7 +171,6 @@ li a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-
 /* Pagina Servicios */
 
 .mainServicios {
@@ -181,21 +185,27 @@ li a:hover {
   align-items: center;
 }
 
-.imgServicios{
+.card:hover {
+  box-shadow: 0 0 20px var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.imgServicios {
   width: 100%;
   height: auto;
-  
+  border-radius: .5rem;
+  margin-bottom: .5rem;
 }
 
 .card {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
-  border: 1px solid lightgray;
-  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  box-shadow: 2px 2px 8px 4px rgb(31, 37, 46, .30);
   border-radius: 15px;
   vertical-align: top;
+  background-color: #ffffff;
+  border: 0;
 }
 
 .cardtitle {
@@ -205,6 +215,7 @@ li a:hover {
 .cardbody {
   padding: 10px;
 }
+
 .more {
   background: var(--primary-color);
   border-radius: 0 0 15px 15px;
@@ -233,6 +244,11 @@ footer {
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
   background: #ffffff;
   width: 100%;
+}
+
+#footer {
+  background-color: transparent !important;
+  padding: .5 !important;
 }
 
 .footer {
@@ -272,7 +288,8 @@ footer {
 .dark-mode .logoFooter a,
 .dark-mode ul li a,
 .dark-mode main h3,
-.dark-mode main h1 {
+.dark-mode main h1,
+.dark-mode p {
   color: #ffffff;
 }
 
@@ -297,6 +314,17 @@ footer {
 .dark-mode footer {
   box-shadow: 0 4px 17px rgba(80, 80, 80, 0.31);
   background: var(--primary-dark);
+}
+
+.dark-mode .card {
+  color: #ffffff;
+  background: var(--primary-dark);
+  box-shadow: 2px 2px 8px 4px rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode .card:hover {
+  box-shadow: 0 0 20px var(--primary-color);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Responsive */
@@ -369,6 +397,7 @@ footer {
     position: absolute;
     right: 4rem;
   }
+
   .images {
     width: 100%;
     margin: auto;
