@@ -58,7 +58,7 @@ header {
 }
 
 .logo a {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ li a:hover {
 /* Pagina inicio */
 
 .mainInicio {
-  padding: 6rem 0;
+  padding: 3rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   row-gap: 2rem;
@@ -127,10 +127,6 @@ li a:hover {
 .images {
   border-radius: .5rem;
   width: 450px;
-  /*box-shadow: 2px 2px 8px 4px rgba(212, 212, 212, 0.30);*/
-}
-
-.images {
   background-color: transparent;
   box-shadow: 10px 10px 20px rgb(209, 217, 230), 10px 10px 20px rgb(255, 255, 255);
   border-top: 3px solid var(--primary-color);
@@ -174,7 +170,7 @@ li a:hover {
 /* Pagina Servicios */
 
 .mainServicios {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 .cards {
@@ -211,7 +207,9 @@ li a:hover {
 .cardtitle {
   font-size: 1.05rem;
   padding: 10px 10px 0 10px;
+  font-weight: bold;
 }
+
 .cardbody {
   padding: 10px;
 }
@@ -228,7 +226,8 @@ li a:hover {
   text-decoration: none;
   color: white;
 }
-.more a:after {
+
+/*.more a:after {
   position: absolute;
   top: 0;
   right: 0;
@@ -236,6 +235,27 @@ li a:hover {
   left: 0;
   z-index: 1;
   content: "";
+}*/
+
+/* Portfolio */
+
+.mainPortfolio {
+  padding: 3rem 0;
+}
+
+.cardsPortfolio {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.imgPortfolio {
+  width: 100%;
+  height: auto;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
 }
 
 /*  Pie de pagina  */
@@ -347,9 +367,11 @@ footer {
   main {
     padding: 0 1.6rem;
   }
+
   .header {
-    padding: 0 1.6rem;
+    padding: 0;
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -359,6 +381,11 @@ footer {
 
   header {
     height: auto;
+  }
+
+  .navbar {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
   }
 
   ul {
@@ -385,6 +412,7 @@ footer {
     left: 0%;
     transition: all 0.3s ease;
   }
+
   .dark-mode .menu {
     color: var(--primary-color);
   }
@@ -403,7 +431,4 @@ footer {
     margin: auto;
   }
 
-  .main {
-    margin-top: 2rem;
-  }
 }
