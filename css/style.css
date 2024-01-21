@@ -141,6 +141,11 @@ li a:hover {
   border-radius: .5rem;
 }
 
+#IGindex ,
+#WPindex {
+  font-weight: bold;
+}
+ 
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -227,16 +232,6 @@ li a:hover {
   color: white;
 }
 
-/*.more a:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  content: "";
-}*/
-
 /* Portfolio */
 
 .mainPortfolio {
@@ -252,6 +247,27 @@ li a:hover {
 }
 
 .imgPortfolio {
+  width: 100%;
+  height: auto;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+}
+
+/* Nosotros */
+
+.mainNosotros {
+  padding: 3rem 0;
+}
+
+.infoNosotros {
+  padding-top: 2rem;
+  /*display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: center;*/
+}
+
+.imgNosotros {
   width: 100%;
   height: auto;
   border-radius: .5rem;
