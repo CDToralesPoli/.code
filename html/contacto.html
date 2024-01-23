@@ -1,94 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunCode • Contacto</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styleold.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- enlace a boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- enlace a los iconos-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- enlace a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <!-- enlace al css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- titulo de la página -->
+    <title>Contacto</title>
 </head>
+
 <body>
-    <!-- Cabecera -->
+    <!-- cabecera -->
     <header class="header">
-        <!-- Logo -->
-        <div class="logoHeader">
-            <img src="../assets/media/logo_funcode_white.svg" style="height: 4rem" alt="Logo FunCode">
-        </div>
-        <!-- Menú Principal -->
-        <nav class="menuPrincipal">
+        <!-- barra de navegacion -->
+        <div class="navbar">
+            <!-- logo en formato texto -->
+            <div class="logo">
+                <a href="../index.html">.<span style="color: #5e17eb">Code</span></a>
+            </div>
+            <!-- evento lanzador e icono del menu en vista mobile -->
+            <input type="checkbox" id="click" />
+            <label for="click" class="mainicon">
+                <!-- icono menu -->
+                <div class="menu">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </label>
+            <!-- menu -->
             <ul>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html" class="active">Contacto</a></li>
             </ul>
-        </nav>
+            <!-- evento lanzador e icono del modo oscuro -->
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle" />
+                <!-- icono modo oscuro -->
+                <i class="bx bxs-bulb"></i>
+            </label>
+        </div>
     </header>
+
     <!-- Cuerpo de la pagina-->
-    <main class="mainContacto">
-        <H1>¿Deseas contactarnos?</H1>
-        <!-- Datos de contacto -->
-        <section class="redesContacto">
-            <h2>Nuestras redes</h2>
-            <div>
-                <img src="../assets/media/logo_whatsapp_color.png" class="icono" style="height: 2rem" alt="logo whatsapp">
-                <h5>WhatsApp</h5>
-                <h6>+54 376-4996553</h6>
+    <main>
+        <section class="mainContacto">
+            <H3>¿Deseas contactarnos?</H3>
+            <div class="contentContact">
+
+                <!-- Datos de contacto -->
+                <div class="infoContacto">
+                    <div class="info">
+                    
+                    <div class="infoSocial">
+                    <h3>Nuestras redes</h3>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/" target="blank"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/" target="blank"><i class="bx bxl-github"></i></a>
+                            <a href="https://www.instagram.com" target="blank"><i class='bx bxl-instagram' id="IGindex"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5493764996553" target="blank"><i class='bx bxl-whatsapp' id="WPindex"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="ubicacion">
+                        <h3>Encuentranos</h3>
+                        <h6>Av Francisco de Haro 5285, Posadas, Misiones.</h6>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d885.5839253907783!2d-55.905977930485456!3d-27.39645450783062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bef64d16fed3%3A0x5e6aac8ff6d33457!2sAv.%20Francisco%20de%20Haro%205285%2C%20N3300%20Posadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1701652450692!5m2!1ses-419!2sar" class="mapa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <div class="contact" id="contact">
+                    <h3 class="heading">Escribenos</h3>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Apellido">
+                        </div>
+                        <div class="input-box">
+                            <input type="tel" placeholder="Teléfono">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <textarea class="message" name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
+                        <input type="submit" value="Enviar" class="btn">
+                    </form>
+                </div>
+
             </div>
-            <div>
-                <img src="../assets/media/logo_instagram_color.png" class="icono" style="height: 2rem" alt="logo instagram">
-                <h5>Instagram</h5>
-                <h6>FunCodeOficial</h6>
-            </div>
-            <div>
-                <img src="../assets/media/logo_linkedin_color.png" class="icono" style="height: 2rem" alt="logo linkedin">
-                <h5>LinkedIn</h5>
-                <h6>FunCode Desarrollos</h6>
-            </div>
-       </section>
-       <!-- Formulario de contacto -->
-       <section class="escribenos">
-        <h2>Escribenos</h2>
-            <div>
-                <label for="mensaje">Mensaje</label>
-                <textarea name="Mensaje" id="mensaje" cols="30" rows="2"></textarea>
-                <br>
-                <input type="button" value="Enviar">
-            </div>
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="Nombre" id="nombre">
-                <br>
-                <label for="email">Email</label>
-                <input type="email" name="Email" id="email">
-            </div>
-       </section>
-       <!-- Ubicación -->
-       <section class="ubicacion">
-            <h2>Encuentranos</h2>
-            <h5>Av Francisco de Haro 5285, Posadas, Misiones.</h5>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d885.5839253907783!2d-55.905977930485456!3d-27.39645450783062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bef64d16fed3%3A0x5e6aac8ff6d33457!2sAv.%20Francisco%20de%20Haro%205285%2C%20N3300%20Posadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1701652450692!5m2!1ses-419!2sar" class="banner" width="2000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </section>
+            <!-- Ubicación -->
+            
+        </section>
     </main>
-    <!-- Pie de página -->
-    <footer class="footer">
-        <!-- Logo -->
-        <seccion class="logoFooter">
-            <img id="logoFooter" src="../assets/media/logo_funcode_white.svg" style="height: 4rem" alt="Logo FunCode">
-            <h6 id="copyright">Copyright 2023 FunCode</h6>
-        </seccion>
-        <!-- Redes -->
-        <section class="redesFooter">
-            <ul>
-                <li><a href="https:www.linkedin.com" target="_blank"><img src="../assets/media/logo_linkedin.png" class="iconoFooter" style="height: 2rem" alt="logo linkedin"></a></li> 
-                <li><a href="https://www.instagram.com" target="_blank"><img src="../assets/media/logo_instagram.png" class="iconoFooter" style="height: 2rem" alt="logo instagram"></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5493764996553" target="_blank"><img src="../assets/media/logo_whatsapp.png" class="iconoFooter" style="height: 2rem" alt="logo whatsapp"></a></li>
-            </ul>
-       </section>
+
+    <!-- pie de pagina con boostrap-->
+    <footer class="footer mt-auto py-3 bg-body-tertiary" id="footer">
+        <!-- contenedor grid -->
+        <div class="footer">
+            <!-- logo y aviso de copyright del sitio -->
+            <div class="logoFooter">
+                <a href="../index.html">.<span style="color: #5e17eb">Code</span></a>
+            </div>
+            <div class="copyright">
+                <p><small>&copy; .Code All Rights Reserved.</small></p>
+            </div>
+        </div>
     </footer>
+
+    <!-- script modo oscuro -->
+    <script>
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const body = document.body;
+        const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+        if (isDarkMode) {
+            body.classList.add("dark-mode");
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener("change", () => {
+            if (darkModeToggle.checked) {
+                body.classList.add("dark-mode");
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                body.classList.remove("dark-mode");
+                localStorage.setItem("darkMode", "disabled");
+            }
+        });
+    </script>
+    <!-- scrip boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+
 </html>
