@@ -8,26 +8,6 @@
     
 }
 
-.cardsPortfolio {
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    align-items: center;
-
-
-    #more {
-        background: var(--primary-color) !important;
-        border-radius: 0 0 15px 15px;
-        padding: 10px;
-        text-align: center;
-        margin-top: auto;
-        color: white;
-        border: 0;
-    }
-
-}
-
 .card {
     min-height: 100%;
     display: flex;
