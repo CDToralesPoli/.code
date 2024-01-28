@@ -1,0 +1,28 @@
+#footer {
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
+    background: #ffffff !important;
+    width: 100%;
+    padding: .5 !important;
+    
+    .footer {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        justify-content: center;
+        align-items: center;
+
+        .logoFooter {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    }
+}

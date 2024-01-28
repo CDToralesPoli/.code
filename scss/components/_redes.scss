@@ -1,0 +1,30 @@
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 1.4rem;
+    
+    a {
+        display: grid;
+        place-items: center;
+        text-decoration: none;
+        color: var(--primary-color);
+        border: 1.6px solid var(--primary-color);
+        font-size: 1.5rem;
+        border-radius: 50%;
+        padding: 0.39rem;
+        text-align: center;
+    }
+
+    a:hover {
+        color: #ffffff;
+        background-color: var(--primary-color);
+        box-shadow: 0 0 20px var(--primary-color);
+        transition: all 0.3s ease-in-out;
+    }
+
+    #IGindex ,
+    #WPindex {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,103 @@
+.dark-mode {
+    background-color: var(--primary-dark);
+
+    h1,
+    h3,
+    h6,
+    p {
+        color: #ffffff;
+    }
+
+    header {
+        box-shadow: 0 4px 17px rgba(80, 80, 80, 0.31);
+        background: var(--primary-dark);
+
+        .navbar {
+            
+            ul {
+                background: var(--primary-dark);
+              }
+
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .mainInicio {
+
+        .images {
+            background: linear-gradient(145deg, #1f252e, #2e3239);
+            box-shadow: 10px 10px 20px #1c1e22, -10px -10px 20px #1b1f27;
+            border-top: 2px solid var(--primary-color);
+            margin: auto;
+            overflow: hidden;
+        }
+    }
+
+    .cards ,
+    .cardsPortfolio {
+
+        .card {
+            color: #ffffff;
+            background: var(--primary-dark) !important;
+            box-shadow: 2px 2px 8px 4px rgba(255, 255, 255, 0.3) !important;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 20px var(--primary-color) !important;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .modal-content {
+            color: #ffffff;
+            background: var(--primary-dark) !important;
+            box-shadow: 2px 2px 8px 4px rgba(255, 255, 255, 0.3) !important;
+        }
+
+        #btnClose {
+            background-color: #ffffff;
+        }
+        
+    }
+
+    .mapa {
+        border-color: transparent;
+        box-shadow: 2px 2px 8px 4px rgba(255, 255, 255, 0.3) !important;
+    }
+
+    .contact {
+        color: #ffffff;
+
+        form {
+
+            .input-box input,
+            textarea {
+                box-shadow: 2px 2px 8px 4px rgba(255, 255, 255, 0.3) !important;
+            }
+
+            .input-box input:hover,
+            textarea:hover {
+                box-shadow: 0 0 20px var(--primary-color) !important;
+            }
+
+            textarea:focus, 
+            input:focus, 
+            input[type]:focus {
+                box-shadow: 0 0 20px var(--primary-color) !important;
+            }
+        }
+
+    }
+
+    #footer {
+        box-shadow: 0 4px 17px rgba(80, 80, 80, 0.31);
+        background: var(--primary-dark) !important;
+
+        .logoFooter {
+            a {
+                color: #ffffff;
+            }
+        }  
+    }
+}

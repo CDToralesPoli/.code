@@ -1,0 +1,81 @@
+.cards {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+
+    
+}
+
+.cardsPortfolio {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+
+
+    #more {
+        background: var(--primary-color) !important;
+        border-radius: 0 0 15px 15px;
+        padding: 10px;
+        text-align: center;
+        margin-top: auto;
+        color: white;
+        border: 0;
+    }
+
+}
+
+.card {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 8px 4px rgb(31, 37, 46, .30);
+    border-radius: 15px;
+    vertical-align: top;
+    background-color: #ffffff;
+    border: 0;
+
+    .cardtitle {
+        font-size: 1.05rem;
+        padding: 10px 10px 0 10px;
+        font-weight: bold;
+    }
+    
+    .cardbody {
+        padding: 10px;
+    }
+
+    .more {
+        background: var(--primary-color);
+        border-radius: 0 0 15px 15px;
+        padding: 10px;
+        text-align: center;
+        margin-top: auto;
+        color: white;
+        border: 0;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+
+    #more {
+        background: var(--primary-color) !important;
+        border-radius: 0 0 15px 15px;
+        padding: 10px;
+        text-align: center;
+        margin-top: auto;
+        color: white;
+        border: 0;
+    }
+
+}
+
+.card:hover {
+    box-shadow: 0 0 20px var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}

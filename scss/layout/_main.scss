@@ -1,0 +1,181 @@
+main {
+    padding: 0 8.4rem;
+    position: relative;
+
+    .mainInicio {
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        row-gap: 2rem;
+        column-gap: 6rem;
+        align-items: center;
+
+        .images {
+            border-radius: .5rem;
+            
+            background-color: transparent;
+            box-shadow: 10px 10px 20px rgb(209, 217, 230), 10px 10px 20px rgb(255, 255, 255);
+            border-top: 3px solid var(--primary-color);
+            margin: auto;
+            overflow: hidden;
+            height: fit-content;
+
+            .imgInicio {
+                width: 100%;
+                height: auto;
+                border-radius: .5rem;
+            }
+        }  
+    }
+
+    .mainServicios {
+        padding: 3rem 0;
+
+        .imgServicios {
+            width: 100%;
+            height: auto;
+            border-radius: .5rem;
+            margin-bottom: .5rem;
+        }
+    }
+
+    .mainPortfolio {
+
+        padding: 3rem 0;
+
+        .imgPortfolio {
+            width: 100%;
+            height: auto;
+            border-radius: .5rem;
+            margin-bottom: .5rem;
+        }
+
+    }
+
+    .mainNosotros {
+
+        padding: 3rem 0;
+
+        .infoNosotros {
+            padding-top: 2rem;
+
+            #info {
+                text-align: center;
+            }
+
+        }
+    }
+    .mainContacto {
+        padding: 3rem 0;
+
+        .contentContact {
+            padding-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+
+            .info {
+                display: flex;
+                align-content: stretch;
+                flex-direction: column;
+                gap: 2rem;
+                width: 100%;
+                height: 100%;
+            }
+
+            .infoSocial {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+
+                h3{
+                    margin: 0;
+                }
+            }
+
+            .mapa {
+                width: 100%;
+                height: auto;
+                border-radius: .5rem;
+                margin: 1rem 0 .5rem 0;
+                border-color: transparent;
+                box-shadow: 2px 2px 8px 4px rgb(31, 37, 46, .30);
+            }
+
+            .contact {
+                min-height: auto;
+                border-color: transparent;
+
+                form {
+                    width: auto;
+                    margin: 1rem auto;
+                    text-align: center;
+
+                    .input-box {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+
+                        input {
+                            width: 49%;
+                            padding: 1rem;
+                            font-size: 1rem;
+                            color: var(--text-color);
+                            background: var(--bg-color);
+                            border-radius: .8rem;
+                            margin: .7rem 0;
+                            border-color: transparent;
+                            box-shadow: 2px 2px 8px 4px rgb(31, 37, 46, .30);
+                        }
+
+                        input:hover {
+                            box-shadow: 0 0 20px var(--primary-color);
+                        }
+
+                    }
+
+                    textarea  {
+                        width: 100%;
+                        padding: 1rem;
+                        font-size: 1rem;
+                        color: var(--text-color);
+                        background: var(--bg-color);
+                        border-radius: .8rem;
+                        margin: .7rem 0;
+                        border-color: transparent;
+                        box-shadow: 2px 2px 8px 4px rgb(31, 37, 46, .30);
+                        resize: none;
+                    }
+
+                    textarea:hover {
+                        box-shadow: 0 0 20px var(--primary-color);
+                    }
+
+                    .btn {
+                        margin-top: 2rem;
+                        cursor: pointer;
+                        color: #ffffff;
+                        background: var(--primary-color);
+                    }
+
+                    .btn:hover {
+                        box-shadow: 0 0 20px var(--primary-color);
+                    }
+
+                }
+
+                input:focus,
+                textarea:focus {
+                    outline: none;
+                }
+
+                input[type]:focus {
+                    box-shadow: 0 0 20px var(--primary-color);
+                }
+
+            }
+
+        }
+
+    }
+}
