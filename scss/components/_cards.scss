@@ -12,10 +12,10 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 2px 8px 4px rgb(31, 37, 46, .30);
+    box-shadow: $dark-shadow;
     border-radius: 15px;
     vertical-align: top;
-    background-color: #ffffff;
+    background-color: $primary-background;
     border: 0;
 
     .cardtitle {
@@ -29,7 +29,7 @@
     }
 
     .more {
-        background: var(--primary-color);
+        background: $primary-color;
         border-radius: 0 0 15px 15px;
         padding: 10px;
         text-align: center;
@@ -44,7 +44,7 @@
     }
 
     #more {
-        background: var(--primary-color) !important;
+        background: $primary-color !important;
         border-radius: 0 0 15px 15px;
         padding: 10px;
         text-align: center;
@@ -56,6 +56,6 @@
 }
 
 .card:hover {
-    box-shadow: 0 0 20px var(--primary-color);
+    box-shadow: $primary-shadow;
     transition: all 0.3s ease-in-out;
 }

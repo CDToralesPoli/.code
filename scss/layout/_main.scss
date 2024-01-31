@@ -1,18 +1,26 @@
 main {
-    padding: 0 8.4rem;
+    padding: 3rem 8.4rem;
     position: relative;
 
     .mainInicio {
-        padding: 3rem 0;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         row-gap: 2rem;
         column-gap: 6rem;
         align-items: center;
 
+        h3 {
+            animation: topSideAnim 1s ease forwards;
+        }
+
+        h1 {
+            opacity: 0;
+            animation: leftSideAnim 1s ease forwards;
+            animation-delay: .1s;
+        }
+
         .images {
             border-radius: .5rem;
-            
             background-color: transparent;
             box-shadow: 10px 10px 20px rgb(209, 217, 230), 10px 10px 20px rgb(255, 255, 255);
             border-top: 3px solid var(--primary-color);
@@ -29,7 +37,6 @@ main {
     }
 
     .mainServicios {
-        padding: 3rem 0;
 
         .imgServicios {
             width: 100%;
@@ -41,28 +48,23 @@ main {
 
     .mainPortfolio {
 
-        padding: 3rem 0;
-
-        /*.cardsPortfolio {
+        .cardsPortfolio {
             padding-top: 2rem;
             display: grid !important;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
             gap: 10rem;
             align-items: center;
-        }*/
+        }
 
         .imgPortfolio {
             width: 100%;
             height: auto;
             border-radius: .5rem;
-            margin-bottom: 10.5rem;
         }
 
     }
 
     .mainNosotros {
-
-        padding: 3rem 0;
 
         .infoNosotros {
             padding-top: 2rem;
@@ -74,7 +76,6 @@ main {
         }
     }
     .mainContacto {
-        padding: 3rem 0;
 
         .contentContact {
             padding-top: 2rem;

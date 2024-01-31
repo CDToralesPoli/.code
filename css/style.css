@@ -4,30 +4,6 @@
   scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
-=======
-html {
-  --primary-color: #5e17eb;
-  --primary-dark: #1f252e;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: #ffffff;
-  color: #000000;
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-}
-
-main {
-  padding: 0 8.4rem;
-  position: relative;
-}
-
->>>>>>> e5cbacfb92aa07f4c44eda7cc576d294f3a18c1c
 h1 {
   color: #000000;
   font-size: 4rem;
@@ -77,6 +53,7 @@ header .navbar {
 header .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  animation: leftSideAnim 1s ease forwards;
 }
 header .navbar .logo a {
   color: #000000;
@@ -119,6 +96,7 @@ header .navbar .mode i {
   background-color: transparent;
   border: 1.5px solid transparent;
   border-radius: 50%;
+  animation: rightSideAnim 1.5s ease forwards;
 }
 header .navbar .mode i:hover {
   filter: drop-shadow(0 0 10px #5e17eb);
@@ -126,16 +104,23 @@ header .navbar .mode i:hover {
 }
 
 main {
-  padding: 0 8.4rem;
+  padding: 3rem 8.4rem;
   position: relative;
 }
 main .mainInicio {
-  padding: 3rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   row-gap: 2rem;
   column-gap: 6rem;
   align-items: center;
+}
+main .mainInicio h3 {
+  animation: topSideAnim 1s ease forwards;
+}
+main .mainInicio h1 {
+  opacity: 0;
+  animation: leftSideAnim 1s ease forwards;
+  animation-delay: 0.1s;
 }
 main .mainInicio .images {
   border-radius: 0.5rem;
@@ -151,35 +136,29 @@ main .mainInicio .images .imgInicio {
   height: auto;
   border-radius: 0.5rem;
 }
-main .mainServicios {
-  padding: 3rem 0;
-}
 main .mainServicios .imgServicios {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
 }
-main .mainPortfolio {
-  padding: 3rem 0;
+main .mainPortfolio .cardsPortfolio {
+  padding-top: 2rem;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+  gap: 10rem;
+  align-items: center;
 }
 main .mainPortfolio .imgPortfolio {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-main .mainNosotros {
-  padding: 3rem 0;
 }
 main .mainNosotros .infoNosotros {
   padding-top: 2rem;
 }
 main .mainNosotros .infoNosotros #info {
   text-align: center;
-}
-main .mainContacto {
-  padding: 3rem 0;
 }
 main .mainContacto .contentContact {
   padding-top: 2rem;
@@ -322,25 +301,21 @@ main .mainContacto .contentContact .contact input[type]:focus {
   margin: auto;
   overflow: hidden;
 }
-.dark-mode .cards .card,
-.dark-mode .cardsPortfolio .card {
+.dark-mode .cards .card {
   color: #ffffff;
   background: var(--primary-dark) !important;
   box-shadow: 2px 2px 8px 4px rgba(255, 255, 255, 0.3) !important;
 }
-.dark-mode .cards .card:hover,
-.dark-mode .cardsPortfolio .card:hover {
+.dark-mode .cards .card:hover {
   box-shadow: 0 0 20px var(--primary-color) !important;
   transition: all 0.3s ease-in-out;
 }
-.dark-mode .cards .modal-content,
-.dark-mode .cardsPortfolio .modal-content {
+.dark-mode .cards .modal-content {
   color: #ffffff;
   background: var(--primary-dark) !important;
   box-shadow: 2px 2px 8px 4px rgba(255, 255, 255, 0.3) !important;
 }
-.dark-mode .cards #btnClose,
-.dark-mode .cardsPortfolio #btnClose {
+.dark-mode .cards #btnClose {
   background-color: #ffffff;
 }
 .dark-mode .mapa {
@@ -371,11 +346,6 @@ main .mainContacto .contentContact .contact input[type]:focus {
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
-  main {
-    padding: 0 1.6rem;
-  }
-}
 @media screen and (max-width: 768px) {
   body {
     height: auto;
@@ -415,16 +385,63 @@ main .mainContacto .contentContact .contact input[type]:focus {
     right: 4rem;
   }
   body main {
-    padding: 0 1.6rem;
+    padding: 2rem 1.6rem;
   }
 }
 @media screen and (max-width: 1024px) {
   main {
     padding: 0 4.4rem;
   }
-  /*.header {
-    padding: 0 4.4rem;
-  }*/
+}
+@keyframes leftSideAnim {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes navAnim {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rightSideAnim {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes topSideAnim {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes SocialAnim {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .cards {
   padding-top: 2rem;
@@ -432,24 +449,6 @@ main .mainContacto .contentContact .contact input[type]:focus {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   align-items: center;
-}
-
-<<<<<<< HEAD
-.cardsPortfolio {
-  padding-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  align-items: center;
-}
-.cardsPortfolio #more {
-  background: var(--primary-color) !important;
-  border-radius: 0 0 15px 15px;
-  padding: 10px;
-  text-align: center;
-  margin-top: auto;
-  color: white;
-  border: 0;
 }
 
 .card {
@@ -471,7 +470,7 @@ main .mainContacto .contentContact .contact input[type]:focus {
   padding: 10px;
 }
 .card .more {
-  background: var(--primary-color);
+  background: #5e17eb;
   border-radius: 0 0 15px 15px;
   padding: 10px;
   text-align: center;
@@ -484,7 +483,7 @@ main .mainContacto .contentContact .contact input[type]:focus {
   color: #ffffff;
 }
 .card #more {
-  background: var(--primary-color) !important;
+  background: #5e17eb !important;
   border-radius: 0 0 15px 15px;
   padding: 10px;
   text-align: center;
@@ -494,7 +493,7 @@ main .mainContacto .contentContact .contact input[type]:focus {
 }
 
 .card:hover {
-  box-shadow: 0 0 20px var(--primary-color);
+  box-shadow: 0 0 20px #5e17eb;
   transition: all 0.3s ease-in-out;
 }
 
@@ -527,6 +526,3 @@ main .mainContacto .contentContact .contact input[type]:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
-=======
-}
->>>>>>> e5cbacfb92aa07f4c44eda7cc576d294f3a18c1c

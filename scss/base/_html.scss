@@ -2,3 +2,14 @@ html {
     --primary-color: #5e17eb;
     --primary-dark: #1f252e;
   }
+
+  $primary-color: #5e17eb;
+  $dark-color: #1f252e;
+
+  $primary-background: #ffffff;
+  $dark-background: #1f252e;
+
+
+
+  $dark-shadow: 2px 2px 8px 4px rgba($dark-color, 0.30);
+  $primary-shadow: 0 0 20px $primary-color;

@@ -1,10 +1,15 @@
 @import "base/reset";
 @import "base/html";
 @import "base/body";
+
+
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
+
 @import "utility/darkMode";
 @import "utility/_media";
+@import "utility/animations";
+
 @import "components/cards";
 @import "components/redes";
